@@ -79,6 +79,7 @@ ldaseq.print_topics(time=4)
 # ldaseq = gensim.models.ldaseqmodel.LdaSeqModel.load('.//research-note/ldaseq_model')
 
 # LDASeq model evaluation ===================================
+
 # UMass score ----------------------------------------------
 timeslice1_topics = ldaseq.dtm_coherence(time=0)
 
@@ -108,6 +109,7 @@ average_coherence_cv = sum(coherence_scores_cv) / len(coherence_scores_cv)
 print(average_coherence_cv)
 
 # preprocessing2 ======================================
+
 start_date = '2021-11-01'
 end_date = '2022-03-31'
 filtered_df = df[(df['Date published'] >= start_date) & (df['Date published'] <= end_date)]
